@@ -1,0 +1,59 @@
+Used on image based data.
+CNN are special kind of neural network for processing data that has a known grid like time series data(1D) or images(2D).
+CNN have a convonutional layer (which perform the function of convolution which is different from the matrix multiplication function unlike in ANN )which is not in ANN
+ANN=>matrix multiplication
+If  a neural network has atleast 1 convonutional layer then it is called CNN.
+
+3 types of layer in CNN:-
+1)Convonutional Layer
+2)Pooling layer
+3)Fully connected Layer(also present in ANN)
+
+Inspired by human visual cortex.
+
+We can use ANN over image data but we do not do it bcz.:-
+Why not ANN?
+=>1)Results are not that satisfactory,CNN>>>ANN.
+  2)High Computational cost in ANN-complex neural network formation-(40,40)pixel image-we want to feed it to a neural network-we convert it to 1D by putting the pixels of
+    second row after the pixels of first row.-1600 pixels in input layer-make fully connected neural network-complex
+  3)Overfitting-since we are having so many neurons(connection),so we will be capturing each minute pattern-overfitting
+  4)Loss of important information like spatial arrangement of pixels-since the image is 2D,we have the eyes and nose of a monkey,when we convert it to 1D we loose the
+    information about the distance between these two 
+    
+    
+    CNN Intution:-
+    
+    Image is a collection of pixels
+    We break down the image into parts and they are called features.When we provide the image to a CNN,then it tries to pick the primitive features like the edges.
+    Then layer by layer it combines those primitive features to make a complex feature.
+    CNN-convonutional layers(basically filters)-function-to extract the features of our image-The layers progressively detect more complex features.
+    
+    Task of CNN:-
+    1)Image classification
+    2)Object localization-in a image where is the object(build a rectangular box over there)-to find object in a image
+    3)Object Detection-Find and locate all the objects in a image-self driving car-also we generate a probability that how much confidengt I am that the object which I am
+      saying is there in the image.
+    4)Face detection
+    5)Image segmentation-divide image into regions-now if I want to do any analysis on it then it helps-self driving car
+    6)Converting low resolution images to high resolution.
+    7)Convert black and white pic to coloured one
+    8)Pose detection-if i am loading the image of a peron then it can detect me the correct pose of that person-games played like Xbox
+    
+    
+    
+    
+    Roadmap:-
+    1)Biological connection
+    2)CNN-basics
+       i)convonutonal operation-how it works
+       ii)padding
+       iii)stride
+       iv)pooling
+    3)How to build a CNN architecture
+    4)CNN Vs ANN-practical comparison
+    5)Dog Vs Cat classifier
+    6)Data Augmentation-used when we have shortage of data
+    7)Popular CNN architecture-LENET,ALEXNET,VGGNET,RESNET,XCEPTION
+    8)Transfer Learning
+    9)Projects
+     Object detection after RNN
